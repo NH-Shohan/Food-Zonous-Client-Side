@@ -1,0 +1,12 @@
+.logo {
+  width: 45px;
+}
+.nav-bar {
+  color: white;
+  font-weight: 600;
+}
+.nav-bar:hover {
+  background-color: yellow;
+  color: black !important;
+  transition: 0.3s linear;
+}
