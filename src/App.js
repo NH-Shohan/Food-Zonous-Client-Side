@@ -14,6 +14,7 @@ import SingleItem from "./Pages/SingleItem/SingleItem";
 import AddItem from "./Pages/AddItem/AddItem";
 
 function App() {
+  console.log(process.env);
   return (
     <div className="App">
       <AuthProvider>

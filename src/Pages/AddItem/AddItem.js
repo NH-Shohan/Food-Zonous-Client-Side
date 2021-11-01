@@ -8,11 +8,9 @@ const AddItem = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    axios.post("http://localhost:5000/items", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("added successfully");
-        reset();
-      }
+    axios.post("http://localhost:5000/addItem", data).then((res) => {
+      alert("Item Added Successfully!!!");
+      reset();
     });
   };
 
@@ -27,7 +25,14 @@ const AddItem = () => {
           onSubmit={handleSubmit(onSubmit)}
         >
           <input
-            {...register("name", { required: true, maxLength: 20 })}
+            {...register("_id", { required: true, maxLength: 20 })}
+            class="form-control border-warning mb-3"
+            id="floatingInput"
+            placeholder="ID"
+            type="number"
+          />
+          <input
+            {...register("foodName", { required: true, maxLength: 20 })}
             class="form-control border-warning mb-3"
             id="floatingInput"
             placeholder="Name"
@@ -40,7 +45,7 @@ const AddItem = () => {
           />
 
           <input
-            {...register("img")}
+            {...register("image")}
             placeholder="image url"
             class="form-control border-warning mb-3"
           />

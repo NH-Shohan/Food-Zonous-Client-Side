@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Item from "./../Item/Item";
 import "./Items.css";
+import SingleItem from "./../../SingleItem/SingleItem";
 
 const Items = (props) => {
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    // fetch("http://localhost:5000/items")
-    fetch("./items.json")
+    fetch("http://localhost:5000/items")
+      // fetch("./items.json")
       .then((res) => res.json())
       .then((data) => {
-        setItems(data);
-        // console.log(data);
+        setItems(data.items);
+        // console.log(data.items);
       });
   }, []);
   return (
@@ -22,6 +23,11 @@ const Items = (props) => {
         {items.map((item) => (
           <Item key={item._id} item={item}></Item>
         ))}
+      </div>
+      <div className="container item-container mt-5">
+        {/* {items.map((itemId) => (
+          <SingleItem key={itemId._id} itemId={itemId}></SingleItem>
+        ))} */}
       </div>
     </div>
   );
