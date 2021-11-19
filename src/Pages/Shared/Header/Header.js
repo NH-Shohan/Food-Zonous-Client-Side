@@ -5,19 +5,19 @@ import useAuth from "./../../../Hooks/useAuth";
 import "./Header.css";
 
 const Header = () => {
-  const { user, logOut } = useAuth();
+  const { user, logout } = useAuth();
 
   return (
     <div className="container">
-      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-dark px-5 shadow-lg">
+      <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-dark shadow-lg">
         <div className="container-fluid">
-          <Link to="/home" className="navbar-brand d-md-flex text-warning">
+          <Link to="/home" className="navbar-brand d-flex text-warning">
             <img className="logo ms-md-5" src={logo} alt="" />
             <h4 className="ms-3 my-auto">FOOD ZONOUS</h4>
           </Link>
-          <form className="d-md-flex ">
+          <form className="d-md-flex">
             <button
-              className="navbar-toggler"
+              className="navbar-toggler icon-btn"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarTogglerDemo02"
@@ -25,14 +25,10 @@ const Header = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
-              <ul
-                className="nav nav-pills me-md-5"
-                id="pills-tab"
-                role="tablist"
-              >
+              <ul className="nav nav-pills my-1" id="pills-tab" role="tablist">
                 <li className="nav-item">
                   <Link to="/home" className="nav-link nav-bar">
                     Home
@@ -56,21 +52,33 @@ const Header = () => {
               </ul>
 
               <form className="d-md-flex">
-                <Link className="text-warning fs-5 pe-4 fw-bold text-decoration-none text-warning my-md-auto">
-                  {user?.displayName}
-                </Link>
                 {user.email ? (
-                  <div className="d-flex me-3">
+                  <div className="d-flex me-1">
+                    <Link
+                      to="/myOrders"
+                      className="nav-link nav-bar rounded-3 "
+                    >
+                      My Orders
+                    </Link>
+                    <Link
+                      to="/manageOrders"
+                      className="nav-link nav-bar rounded-3 "
+                    >
+                      Manage Orders
+                    </Link>
                     <Link
                       to="/addItem"
-                      className="nav-link nav-bar rounded-3 me-3"
+                      className="nav-link nav-bar rounded-3 me-2"
                     >
                       Add Items
                     </Link>
+                    <h2 className="text-warning fs-5 pe-4 fw-bold text-decoration-none text-warning my-auto">
+                      {user?.displayName}
+                    </h2>
                     <button
                       type="button"
                       className="btn btn-outline-warning fw-bold"
-                      onClick={logOut}
+                      onClick={logout}
                     >
                       Logout
                     </button>

@@ -10,8 +10,10 @@ import About from "./Pages/About/About";
 import AuthProvider from "./Context/AuthProvider";
 import Login from "./Pages/Login/Login/Login";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
-import SingleItem from "./Pages/SingleItem/SingleItem";
-import AddItem from "./Pages/AddItem/AddItem";
+import Orders from "./Pages/Orders/Orders";
+import MyOrders from "./Pages/Login/MyOrders/MyOrders";
+import ManageOrders from "./Pages/Login/ManageOrders/ManageOrders";
+import AddItem from "./Pages/Login/AddItem/AddItem";
 
 function App() {
   console.log(process.env);
@@ -33,8 +35,8 @@ function App() {
             <Route path="/items">
               <Items></Items>
             </Route>
-            <PrivateRoute path="/singleItem/:itemId">
-              <SingleItem></SingleItem>
+            <PrivateRoute path="/orders/:itemId/:itemName/">
+              <Orders></Orders>
             </PrivateRoute>
             <Route path="/contact">
               <Contact></Contact>
@@ -42,9 +44,15 @@ function App() {
             <Route path="/login">
               <Login></Login>
             </Route>
-            <Route path="/addItem">
+            <PrivateRoute path="/myOrders">
+              <MyOrders></MyOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/manageOrders">
+              <ManageOrders></ManageOrders>
+            </PrivateRoute>
+            <PrivateRoute path="/addItem">
               <AddItem></AddItem>
-            </Route>
+            </PrivateRoute>
             <Route path="*">
               <NotFound></NotFound>
             </Route>

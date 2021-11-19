@@ -8,10 +8,12 @@ const AddItem = () => {
   const onSubmit = (data) => {
     console.log(data);
 
-    axios.post("http://localhost:5000/addItem", data).then((res) => {
-      alert("Item Added Successfully!!!");
-      reset();
-    });
+    axios
+      .post("https://food-zonous.herokuapp.com/addItem", data)
+      .then((res) => {
+        alert("Item Added Successfully!!!");
+        reset();
+      });
   };
 
   return (
@@ -25,33 +27,26 @@ const AddItem = () => {
           onSubmit={handleSubmit(onSubmit)}
         >
           <input
-            {...register("_id", { required: true, maxLength: 20 })}
-            class="form-control border-warning mb-3"
-            id="floatingInput"
-            placeholder="ID"
-            type="number"
-          />
-          <input
             {...register("foodName", { required: true, maxLength: 20 })}
-            class="form-control border-warning mb-3"
+            className="form-control border-warning mb-3"
             id="floatingInput"
             placeholder="Name"
           />
           <textarea
             {...register("description")}
             placeholder="Description"
-            class="form-control border-warning mb-3"
+            className="form-control border-warning mb-3"
             id="floatingTextarea2"
           />
 
           <input
             {...register("image")}
             placeholder="image url"
-            class="form-control border-warning mb-3"
+            className="form-control border-warning mb-3"
           />
           <input
             type="submit"
-            class="btn btn-outline-warning btn-lg mt-3 mb-5 text-dark fw-bold"
+            className="btn btn-outline-warning btn-lg mt-3 mb-5 text-dark fw-bold"
           />
         </form>
       </div>

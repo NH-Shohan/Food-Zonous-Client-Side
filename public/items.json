@@ -1,54 +1,45 @@
 [
   {
-    "_id": 1,
     "foodName": "Sutterfield",
     "image": "https://i.ibb.co/72hRKgW/9.jpg",
     "description": "Bursting with flavour, this comforting, vegetarian soup comes alive with hearty pumpkin, sweet carrots and a little kick of garlic. The pumpkin and carrot combo creates such an incredible flavour that complements the unusual mix of spices (which I must say, brings the soup to a whole new level)."
   },
   {
-    "_id": 2,
     "foodName": "Mendoza",
     "image": "https://i.ibb.co/BtC0rF9/7.jpg",
     "description": "Sushi is a traditional Japanese dish of prepared vinegared rice, usually with some sugar and salt, accompanied by a variety of ingredients, such as seafood, often raw, and vegetables. Styles of sushi and its presentation vary widely, but the one key ingredient is 'sushi rice', also referred to as shari, or sumeshi"
   },
   {
-    "_id": 3,
     "foodName": "Puckey",
     "image": "https://i.ibb.co/thmxsdL/8.jpg",
     "description": "Southern fried chicken, also known simply as fried chicken, is a dish consisting of chicken pieces that have been coated with seasoned flour or batter and pan-fried, deep fried, pressure fried, or air fried. The breading adds a crisp coating or crust to the exterior of the chicken while retaining juices in the meat."
   },
   {
-    "_id": 4,
     "foodName": "Hanscombe",
     "image": "https://i.ibb.co/jr1Y8wC/6.jpg",
     "description": "Pizza is a dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients, which is then baked at a high temperature, traditionally in a wood-fired oven. A small pizza is sometimes called a pizzetta"
   },
   {
-    "_id": 5,
     "foodName": "Thames",
     "image": "https://i.ibb.co/hcZgj1y/5.jpg",
     "description": "This banana pancake ice cream was created entirely because I had leftover pancakes that needed to be eaten, as well as ripe bananas that needed to be used up.You can use whole grain pancakes or classic buttermilk pancakes. Whatever you like best is what you should use, just don’t burn them!"
   },
   {
-    "_id": 6,
     "foodName": "Ducker",
     "image": "https://i.ibb.co/rQCMCkz/4.jpg",
     "description": "A creamy cooling yoghurt topped with hot, roasted herby tomatoes. Delicious as a side dish or as part of a mezze platter – recipe from Yotam Ottolenghi's 'Simple' cookbook.You roast and grill them so they blacken becoming boiling hot, charred tomatoes which are poured over a bed of cold yoghurt."
   },
   {
-    "_id": 7,
     "foodName": "Carff",
     "image": "https://i.ibb.co/sqhd0PW/3.jpg",
     "description": "Corn fried rice recipe with step by step pics. Homely, easy and delicious corn fried rice made with sweet corn, rice, spring onions, capsicum and herbs+spices. Gluten-free and vegan.It is one of our favourite rice based dish using corn. The dish makes for a tasty and satisfying lunch or dinner."
   },
   {
-    "_id": 8,
     "foodName": "Brooker",
     "image": "https://i.ibb.co/KwGjjdJ/1.jpg",
     "description": "A hamburger is a food, typically considered a sandwich, consisting of one or more cooked patties—usually ground meat, typically beef—placed inside a sliced bread roll or bun. The patty may be pan fried, grilled, smoked or flame broiled."
   },
   {
-    "_id": 9,
     "foodName": "Blastozer",
     "image": "https://i.ibb.co/zG064Rz/2.jpg",
     "description": "Oven Baked French Toast Sticks are easy to make, no-fork-required, perfectly dunk-able sticks of soft, buttery, perfectly cinnamony bliss! Breakfast just got a whole lot more exciting with this baked French toast recipe!"

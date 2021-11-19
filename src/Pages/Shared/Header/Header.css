@@ -1,6 +1,18 @@
 .logo {
   width: 45px;
 }
+.icon-btn {
+  position: fixed;
+  top: 20px;
+  right: 35px;
+  width: 40px;
+  height: 30px;
+}
+.icon {
+  position: fixed;
+  top: 20px;
+  right: 40px;
+}
 .nav-bar {
   color: white;
   font-weight: 600;

@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Item from "./../Item/Item";
 import "./Items.css";
-import SingleItem from "./../../SingleItem/SingleItem";
+import ItemModal from "./../Item/ItemModal";
 
 const Items = (props) => {
   const [items, setItems] = useState([]);
+  const [product, setProduct] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5000/items")
-      // fetch("./items.json")
+    fetch("https://food-zonous.herokuapp.com/items")
       .then((res) => res.json())
       .then((data) => {
         setItems(data.items);
-        // console.log(data.items);
       });
   }, []);
   return (
@@ -21,14 +20,10 @@ const Items = (props) => {
       <hr className="border border-4 border-dark rounded-pill w-25 m-auto" />
       <div className="container item-container mt-5">
         {items.map((item) => (
-          <Item key={item._id} item={item}></Item>
+          <Item key={item._id} item={item} setProduct={setProduct}></Item>
         ))}
       </div>
-      <div className="container item-container mt-5">
-        {/* {items.map((itemId) => (
-          <SingleItem key={itemId._id} itemId={itemId}></SingleItem>
-        ))} */}
-      </div>
+      <ItemModal product={product} />
     </div>
   );
 };

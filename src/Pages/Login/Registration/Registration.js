@@ -18,42 +18,42 @@ const Registration = () => {
           <h1 className="fs-1 text-primary">
             Please {isLogin ? "Login" : "Register"}
           </h1>
-          <div class="mb-3 text-start">
-            <label for="exampleInputEmail1" class="form-label">
+          <div className="mb-3 text-start">
+            <label for="exampleInputEmail1" className="form-label">
               Email address
             </label>
             <input
               onBlur={handleEmailChange}
               type="email"
-              class="form-control"
+              className="form-control"
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               required
             />
-            <div id="emailHelp" class="form-text">
+            <div id="emailHelp" className="form-text">
               We'll never share your email with anyone else.
             </div>
           </div>
-          <div class="mb-3 text-start">
-            <label for="exampleInputPassword1" class="form-label">
+          <div className="mb-3 text-start">
+            <label for="exampleInputPassword1" className="form-label">
               Password
             </label>
             <input
               onBlur={handlePasswordChange}
               type="password"
-              class="form-control"
+              className="form-control"
               id="exampleInputPassword1"
               required
             />
           </div>
-          <div class="mb-3 form-check text-start">
+          <div className="mb-3 form-check text-start">
             <input
               onChange={toggleLogin}
               type="checkbox"
-              class="form-check-input"
+              className="form-check-input"
               id="exampleCheck1"
             />
-            <label class="form-check-label" for="exampleCheck1">
+            <label className="form-check-label" for="exampleCheck1">
               Already Registered
             </label>
           </div>

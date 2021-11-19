@@ -9,36 +9,36 @@ const Contact = () => {
       <div className="row g-3">
         <img className="col-md-6" src={image} alt="" />
         <form className="mt-md-5 pt-5 col-md-6">
-          <div class="form-floating mb-3 ">
+          <div className="form-floating mb-3 ">
             <input
               type="text"
-              class="form-control border-warning"
+              className="form-control border-warning"
               id="floatingInput"
               placeholder="name"
             />
             <label for="floatingInput">Name</label>
           </div>
-          <div class="form-floating mb-3">
+          <div className="form-floating mb-3">
             <input
               type="email"
-              class="form-control border-warning"
+              className="form-control border-warning"
               id="floatingInput"
               placeholder="name@example.com"
             />
             <label for="floatingInput">Email address</label>
           </div>
-          <div class="form-floating mb-3">
+          <div className="form-floating mb-3">
             <input
               type="number"
-              class="form-control border-warning"
+              className="form-control border-warning"
               id="floatingInput"
               placeholder="Phone Number"
             />
             <label for="floatingInput">Phone Number</label>
           </div>
-          <div class="form-floating">
+          <div className="form-floating">
             <textarea
-              class="form-control border-warning"
+              className="form-control border-warning"
               placeholder="Leave a comment here"
               id="floatingTextarea2"
               style={{ height: "160px" }}
@@ -47,7 +47,7 @@ const Contact = () => {
           </div>
           <button
             type="button"
-            class="btn btn-outline-warning btn-lg mt-3 mb-5 text-dark"
+            className="btn btn-outline-warning btn-lg mt-3 mb-5 text-dark"
           >
             Submit
           </button>
